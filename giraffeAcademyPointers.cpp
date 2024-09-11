@@ -1,4 +1,4 @@
-// Andrew Powell 9/11/2024
+// Andrew Powell 9/11/2024 (added meaning of pointers)
 // giraffeAcademyPointers.cpp
 
 
@@ -21,7 +21,7 @@ int main() {
     cout << "Name = " << &name <<  endl;
     // & prints out or points to memory address for the following variable
 
-    // Create pointer? Idk why you do this if the first way works?
+    // Create pointer? I don't know why you do this if the first way works?
     int *pAge = &age;
     double *pGpa = &gpa;
     string *pName = &name;
@@ -32,6 +32,16 @@ int main() {
     // De-reference memory?
     cout << "*pAge = " << *pAge << endl;
 
+ /*
+  *Examples of what the syntax means:
+  *
+    int * pX = &x;
+    "Integer pointer named pX is set to the address of x"
+
+    int y = *pX;
+     "Integer named y is set to the thing pointed to by pX"
+    */
 
     return 0;
 }
+
